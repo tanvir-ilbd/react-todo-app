@@ -62,7 +62,7 @@ function TodoApp() {
 
   return (
     <div className="container">
-      <h1 className="mb-4 mt-4">Todo App!</h1>
+      <h1 className="mb-4 mt-4">Todo App</h1>
       <TodoForm
         form={form}
         onInputChange={onInputChange}
