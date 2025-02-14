@@ -1,4 +1,5 @@
 function TodoForm({ form, onInputChange, onFormSubmit }) {
+  const getDisabled = () => (form.value ? "" : "disabled");
   return (
     <>
       {/* <h3>Todo Form</h3> */}
@@ -14,7 +15,11 @@ function TodoForm({ form, onInputChange, onFormSubmit }) {
             />
           </div>
           <div className="col">
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={getDisabled()}
+            >
               {form.action} Todo
             </button>
           </div>
